@@ -19,7 +19,7 @@ reader = Reader(rating_scale=(1, 5))
 
 #need to convert the dataframe into a dataset compatible with the Surprise library
 from surprise import Dataset
-data = Dataset.load_from_df(user_interests_df[['user_id', 'interests', 'rating']], reader)
+data = Dataset.load_from_df(user_interest_df[['user_id', 'interests', 'rating']], reader)
 
 #bring in SURPRISE!
 from surprise import SVD
