@@ -8,8 +8,9 @@ import matplotlib.pyplot as plt
 #user_id, interests, rating
 
 #any data json manipulation goes here
-#SVD input dataframe = interests_df
-interests_df = 
+#SVD input dataframe = user_interests_df with 'experience' column dropped
+user_interest_df = pd.read_csv('user_interest_df.csv', index_col=0)
+user_interest_df.drop(['experience'], axis=1, inplace=True)
 
 #using surprise for SVD
 from surprise import Reader
@@ -18,7 +19,7 @@ reader = Reader(rating_scale=(1, 5))
 
 #need to convert the dataframe into a dataset compatible with the Surprise library
 from surprise import Dataset
-data = Dataset.load_from_df(interests_df[['user_id', 'interests', 'rating']], reader)
+data = Dataset.load_from_df(user_interests_df[['user_id', 'interests', 'rating']], reader)
 
 #bring in SURPRISE!
 from surprise import SVD
