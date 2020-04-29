@@ -1,0 +1,104 @@
+@import './colors';
+
+
+.interests {
+    width: 30rem;;
+    height: 15rem;
+    color: white;
+    margin-left: 3rem;
+
+    &__title {
+
+    }
+
+    .interest {
+        width: 35rem;
+        height: 20rem;
+        display: flex;
+        justify-content: center;
+        // align-items: center;
+        background-color: $button;
+        border-radius: 4px;
+
+        
+        &__subject {
+            width: 15rem;
+            height: 2rem;
+
+            &-name {
+                list-style-type: none;
+                padding-left: 0;
+                
+                &--one, &--two, &--three {
+                    height: 3rem;
+                    background-color: $hover;
+                    border-radius: 4px;
+                    margin-bottom: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                } 
+            }
+        }
+        &__rate {
+            width: 3rem;
+            height: 2rem;
+            margin: 0 40px;
+
+            &-name {
+                list-style-type: none;
+                padding-left: 0;
+                
+                &--one, &--two, &--three {
+                    height: 3rem;
+                    background-color: $hover;
+                    border-radius: 4px;
+                    margin-bottom: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                } 
+            }
+        }
+        &__exp {
+            width: 3rem;
+            height: 2rem;
+
+            &-name {
+                list-style-type: none;
+                padding-left: 0;
+                
+                &--one, &--two, &--three {
+                    height: 3rem;
+                    background-color: $hover;
+                    border-radius: 4px;
+                    margin-bottom: 1rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                } 
+            }
+        }
+    }
+}
+
+.profile__projects {
+    margin-top: 10rem;
+    margin-left: 3rem;
+
+        .profile__completed-projects {
+            color: white;
+            margin-bottom: 1rem;
+        
+        }
+        .profile__completed-projects--number {
+            height: 5rem;
+            width: 35rem;
+            color: white;
+            background-color: $button;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+        }
+    }

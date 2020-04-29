@@ -1,0 +1,66 @@
+@import './colors';
+
+.profile {
+    width: 25rem;
+    margin-left: 5rem;
+    margin-top: 5rem;
+
+    &__title {
+        color: white;
+        // margin-bottom: 1rem;
+    }
+
+    &__info {
+        height: 30rem;
+        width: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: $button;
+        border-radius: 4px;
+
+        .profile__user {
+            margin: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            &-image {
+                width: 3em;
+                height: 3rem;
+                border-radius: 100%;
+            }
+
+        }
+
+        &-location, &-age, &-position, &-time {
+            width: 15rem;
+            height: 3rem;
+            background-color: button;
+            display: flex;
+            text-align: center;
+            border: 1px solid black;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__projects {
+        .profile__completed-projects {
+            color: white;
+            margin-bottom: .5rem;
+        
+        }
+        .profile__completed-projects--number {
+            height: 3rem;
+            width: 15rem;
+            color: white;
+            background-color: $button;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 4px;
+        }
+    }
+}

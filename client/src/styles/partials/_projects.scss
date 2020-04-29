@@ -1,0 +1,40 @@
+@import './colors';
+
+.project {
+    height: 100%;
+    color: white;
+    margin-left: 3rem;
+
+    &__title {
+        margin-bottom: .5rem;
+    }
+
+    &__container {
+        
+        .project__card {
+            width: 25rem;
+            height: 5rem;
+            background-color: $button;
+            border-radius: 4px;
+
+            &-name {
+                display: block;
+                padding-top: .5rem;
+                padding-left: .5rem;
+
+            }
+            &-time, &-participants {
+                display: inline;
+                padding-top: .5rem;
+                padding-left: .5rem;
+                padding-right: 3rem;
+                font-size: 14px;
+                line-height: 16px;
+            }
+        }
+
+        .project__card:hover {
+            border-left: 10px solid gray;
+        }
+    }
+}
