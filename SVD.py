@@ -32,7 +32,8 @@ algo = SVD(n_epochs=4, lr_all=0.004)
 algo.fit(trainset)
 #no train or test set for this, using all data for now
 #get predictions from SVD
-predictions = algo.test(trainset)
+testset = trainset.build_anti_testset()
+predictions = algo.test(testset)
 
 from collections import defaultdict
 #function to get top-N recommendations for each user
@@ -61,13 +62,13 @@ def get_top_n(predictions, n=10):
 
 
 #get top 10 recommended projects, can change this to as many as we want later
-top_n = get_top_n(predictions, n=10)
+top_n = get_top_n(predictions, n=3)
 
 # Print the recommended items for specific user
 # need to find the top_n for specific user, this will get all users
-uid = 1 #try first user?
+#uid = 1 #try first user?
 for uid, user_ratings in top_n.items():
-    recs = [iid in user_ratings]
+    #recs = [iid in user_ratings]
     print(uid, [iid for (iid, _) in user_ratings])
 #current output looks like this:
 #5c9d0a0f9e6b95d773ab0a3ea10dd06bd2629736 ['SOYWEJZ12AB0183988', 'SOLRGVL12A8C143BC3', 'SORZCRI12A8AE4807B', 'SOLXVSH12AB018BE14', 'SOVNREB12AB017ACAC', 'SODJJAU12A8C13A16F', 'SOAXKNC12AF72A4BF8', 'SOVHZVI12A8C14398A', 'SOEZUTY12A8C132CED', 'SOFMWSD12A8C13CE54']
@@ -75,3 +76,52 @@ for uid, user_ratings in top_n.items():
 import json
 print(json.dumps(uid))
 print(json.dumps(recs))
+
+#then match user_interest to project_interest for project_id
+#generate list of project_id's
+#change interest to role
+#need to search for one user at a time, need to match with the generated recommendations
+#need to provide Tom the input arguments for our function. Send what we need, just need the user_id, 
+#everything else is in the files for now
+
+#why dont we get all users with recommendations?
+# the users that don't have any recs are the ones that have "rated" all interests all ready
+
+Given a list of project ids -> return a JSON object of projects
+
+For loops over project id list:
+	For each project id get the following data:
+		Name (from the projects table)
+		Description (from the projects table)
+		Time (from the projects table)
+Duration (from the projects table)
+User limit (from the projects table)
+Project image url (from the projects table)
+Number of views (from the projects table)
+Project owner name (get the user_id from project then lookup the user’s name from the users table)
+Number of current users working on project (get all the user ids for the given project id from the Project User table)
+Project owner image url (get from the user table using project owner id)
+List of roles + experiences (get all the role ids and associated experience_ids for the given project id from the Project Roles table)
+
+Function convertToJson(data above)
+X = {
+“name”: name,
+“description”: description,
+“time”: time,
+“duration”: duration,
+“user_limit”: user_limit,
+“project_image”: project image url,
+“num_views” = number of views,
+“project_owner_name” = project owner name,
+“num_users” = number of current users,
+“project_owner_image_url”: project owner image url,
+“roles”: Func makeDicts(list of roles)
+}
+
+Return json.dumps(x)
+
+makeDicts(list of roles):
+list = []
+loop over roles:
+	list.append {“role”: role[i][0], “experience”: role[i][1])
+return list
