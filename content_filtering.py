@@ -17,7 +17,7 @@ def content_filtering(user):
     # go through all projects
     for project in project_rating_df.index:
                     
-        # calculate similarity of two projects
+        # calculate similarity of user interest with project interest
         user_rating_sparse = scipy.sparse.csr_matrix(user_rating_df.iloc[user, :].values)
         project_rating_sparse = scipy.sparse.csr_matrix(project_rating_df.iloc[project, :].values)
         similarity = cosine_similarity(user_rating_sparse, project_rating_sparse)
