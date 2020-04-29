@@ -1,0 +1,28 @@
+@import './colors';
+
+.recommendation {
+    color: white;
+
+    &__title {
+
+    }
+
+    &__projects {
+        width: 100%;
+
+        .project__card {
+            background-color: $button;
+
+            &-name {
+
+            }
+            &-time {
+                
+            }
+            &-description {
+                
+            }
+            
+        }
+    }
+}
