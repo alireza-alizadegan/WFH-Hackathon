@@ -1,42 +1,42 @@
-project_id,Name,Description,Time,user_id,User Limit,Duration
-1,Viral Tunes,Analyze the most popular songs over the last ten years and use machine learning to find any patterns that can lead to the creation of a new viral hit,6,6,5,3
-2,Local Rink Website,"We are trying to create a new website for our local rink to schedule free skates and pick-up hockey games! Our town has been fortunate to have built a new rink for league hockey, so we are repurposing our old rink! ",12,1,6,4
-3,The Power of Many Website,"Say we want to guess the number of jelly beans in a jar. The chances of one person’s guess being right is very slim. However, if we ask many people and take the average, our new guess will be highly accurate. We are trying to create a platform to harness the power of many for any seemingly small task, yet difficult for one person.",10,56,10,6
-4,Seattle NHL Team Logo,Let’s try to create and design imaginative logos for the upcoming Seattle NHL team!,5,99,6,2
-5,Face Recognition Door Lock,I would like to make a camera (installed in my front door) recognize my face and send a signal to unlock it.,10,54,3,2
-6,Beat Generation,Let’s collectively create some electronic beats and see what we can come up with!,3,37,5,10
-7,Python Scrapers,"Scrapers are useful data collection tools, but how do you build them? ",3,79,10,3
-8,Portfolio Optimization,Applying machine learning to manage your investment portfolio.,6,91,8,3
-9,Half-marathon,Run a half-marathon in 100 minutes or less.,8,5,12,12
-10,Short Story,Write a short story within 3 weeks.,12,30,8,3
-11,Homebrew,Collaborate on beer making! Focus on Pilsner,3,42,6,12
-12,Astrophotography,Let’s try to get the best shot of the Milky Way.,5,12,8,6
-13,AR,Build an Augmented Reality app for iPhone.,10,35,12,12
-14,Web game,Build a web-based video game.,6,90,12,12
-15,Become Vegetarian,"Collaborate and share vegetarian recipes, post and share food logs on the path to vegetarianism!",12,82,20,12
-16,1000lb Club,"Squat, bench and deadlift a combined maximum weight of 1000 pounds. Let’s join the club.",6,67,6,12
-17,Day-trade Dashboard,Let's use Tableau and python to collaborate and build day-trading dashboards.,6,3,3,10
-18,Screenplay,Ever want to write a script for a TV show or movie? Let’s work on one together.,6,9,3,12
-19,Time-series Analysis,Applying ARIMA and Prophet to time series data.,3,24,6,3
-20,Public Speaking,Practice writing and presenting speeches!,3,26,6,8
-21,,,,,,
-22,,,,,,
-23,,,,,,
-24,,,,,,
-25,,,,,,
-26,,,,,,
-27,,,,,,
-28,,,,,,
-29,,,,,,
-30,,,,,,
-31,,,,,,
-32,,,,,,
-33,,,,,,
-34,,,,,,
-35,,,,,,
-36,,,,,,
-37,,,,,,
-38,,,,,,
-39,,,,,,
-40,,,,,,
-41,,,,,,
+project_id,Name,Description,Time,user_id,User Limit,Duration,Project_image_url,views
+1,Viral Tunes,Analyze the most popular songs over the last ten years and use machine learning to find any patterns that can lead to the creation of a new viral hit,6,6,5,3,https://unsplash.com/photos/PDX_a_82obo,5
+2,Local Rink Website,"We are trying to create a new website for our local rink to schedule free skates and pick-up hockey games! Our town has been fortunate to have built a new rink for league hockey, so we are repurposing our old rink! ",12,1,6,4,https://unsplash.com/photos/fE0_MgLkKic,15
+3,The Power of Many Website,"Say we want to guess the number of jelly beans in a jar. The chances of one person’s guess being right is very slim. However, if we ask many people and take the average, our new guess will be highly accurate. We are trying to create a platform to harness the power of many for any seemingly small task, yet difficult for one person.",10,56,10,6,https://unsplash.com/photos/UmXdkeKjqe4,34
+4,Seattle NHL Team Logo,Let’s try to create and design imaginative logos for the upcoming Seattle NHL team!,5,99,6,2,https://unsplash.com/photos/7r59pbkQY6U,22
+5,Face Recognition Door Lock,I would like to make a camera (installed in my front door) recognize my face and send a signal to unlock it.,10,54,3,2,https://disruptionhub.com/wp-content/uploads/2017/09/FaceTecRec.png,75
+6,Beat Generation,Let’s collectively create some electronic beats and see what we can come up with!,3,37,5,10,https://unsplash.com/photos/MADy8C_qvYA,31
+7,Python Scrapers,"Scrapers are useful data collection tools, but how do you build them? ",3,79,10,3,https://bdmpublications.com/wp-content/uploads/2019/05/python-logo-1.jpg,12
+8,Portfolio Optimization,Applying machine learning to manage your investment portfolio.,6,91,8,3,https://unsplash.com/photos/hpjSkU2UYSU,10
+9,Half-marathon,Run a half-marathon in 100 minutes or less.,8,5,12,12,https://unsplash.com/photos/rN78O6UgdkE,8
+10,Short Story,Write a short story within 3 weeks.,12,30,8,3,https://unsplash.com/photos/y02jEX_B0O0,24
+11,Homebrew,Collaborate on beer making! Focus on Pilsner,3,42,6,12,https://unsplash.com/photos/NCmog4xinew,29
+12,Astrophotography,Let’s try to get the best shot of the Milky Way.,5,12,8,6,https://unsplash.com/photos/4dpAqfTbvKA,30
+13,AR,Build an Augmented Reality app for iPhone.,10,35,12,12,https://unsplash.com/photos/1XXqGbkRJD8,18
+14,Web game,Build a web-based video game.,6,90,12,12,https://unsplash.com/photos/PXfJmTRwTZY,3
+15,Become Vegetarian,"Collaborate and share vegetarian recipes, post and share food logs on the path to vegetarianism!",12,82,20,12,https://unsplash.com/photos/T_dY6AzzVXU,19
+16,1000lb Club,"Squat, bench and deadlift a combined maximum weight of 1000 pounds. Let’s join the club.",6,67,6,12,https://unsplash.com/photos/qZ-U9z4TQ6A,54
+17,Day-trade Dashboard,Let's use Tableau and python to collaborate and build day-trading dashboards.,6,3,3,10,https://unsplash.com/photos/DfjJMVhwH_8,3
+18,Screenplay,Ever want to write a script for a TV show or movie? Let’s work on one together.,6,9,3,12,https://unsplash.com/photos/qFH7-yKoxik,842
+19,Time-series Analysis,Applying ARIMA and Prophet to time series data.,3,24,6,3,https://unsplash.com/photos/JKUTrJ4vK00,49
+20,Public Speaking,Practice writing and presenting speeches!,3,26,6,8,https://unsplash.com/photos/LETdkk7wHQk,31
+21,,,,,,,,
+22,,,,,,,,
+23,,,,,,,,
+24,,,,,,,,
+25,,,,,,,,
+26,,,,,,,,
+27,,,,,,,,
+28,,,,,,,,
+29,,,,,,,,
+30,,,,,,,,
+31,,,,,,,,
+32,,,,,,,,
+33,,,,,,,,
+34,,,,,,,,
+35,,,,,,,,
+36,,,,,,,,
+37,,,,,,,,
+38,,,,,,,,
+39,,,,,,,,
+40,,,,,,,,
+41,,,,,,,,
