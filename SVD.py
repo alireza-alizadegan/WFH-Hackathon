@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from get_top_n import get_top_n
 
 #should put all requirements in a requirements.txt file so uploading necessary libraries is easy
 
@@ -9,7 +10,7 @@ import matplotlib.pyplot as plt
 
 #any data json manipulation goes here
 #SVD input dataframe = interests_df
-interests_df = 
+user_interests_df = pd.read_csv("./data/user_interests_df.csv")
 
 #using surprise for SVD
 from surprise import Reader
@@ -18,7 +19,7 @@ reader = Reader(rating_scale=(1, 5))
 
 #need to convert the dataframe into a dataset compatible with the Surprise library
 from surprise import Dataset
-data = Dataset.load_from_df(interests_df[['user_id', 'interests', 'rating']], reader)
+data = Dataset.load_from_df(user_interests_df[['user_id', 'interest_id', 'rating']], reader)
 
 #bring in SURPRISE!
 from surprise import SVD
