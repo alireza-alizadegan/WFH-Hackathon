@@ -88,6 +88,8 @@ print(json.dumps(recs))
 #why dont we get all users with recommendations?
 # the users that don't have any recs are the ones that have "rated" all interests all ready
 
+#PSEUDOCODE FOR CONVERTING PROJECT IDS TO JSON
+
 Given a list of project ids -> return a JSON object of projects
 
 For loops over project id list:
